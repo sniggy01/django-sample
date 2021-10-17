@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+	{% block body_block %}
+		{% load my_extras %}
+		<h1>Welcome to Index</h1>
+		<h1>This is index page that has inherited navbar from base.html file</h1>
+		{{ text|upper }}
+		{{ number|add:"125" }}
+		{{ text|cut:'ello' }}
+	{% endblock %}
